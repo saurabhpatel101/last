@@ -21,4 +21,5 @@ app.use('/api/users', require('./routes/users'));
 app.get("/",(req,res)=>{
     return res.status(200).json({msg: "Hi there"})
 })
+
 app.listen(PORT, () => { console.log(`Server Started on port ${PORT}`) });
